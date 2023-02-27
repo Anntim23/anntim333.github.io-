@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&family=Poiret+One&family=Sacramento&family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bellota+Text:wght@300&family=Marck+Script&family=Poiret+One&family=Sacramento&family=Shantell+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --orange-color: #FF9900;
+    --orange-color2: #E1670E;
+    --orange-color3: #FFB84D;
+    --black-color: #000;
+    --white-color: #fff;
+    --grey-color: #cacaca;
+    --gray-color2: #666666;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+/*glob*/
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* STYLE */
+/* HEADER */
+.header_content {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header_text {
+    max-width: 400px;
+    margin-right: 100px;
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__link {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.nav__link {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.nav__link:focus-visible {
+    outline-offset: 5px;
+    outline: 2px solid #ffed00;
+}
+
+
+.nav__link:hover {
+    color: #ffd700;
+    border-color: #ffed00;
+}
+
+
+/* HERO */
+
+.hero_content {
+    margin: 90px 0;
+}
+
+.hero_title {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 80px;
+    line-height: 90px; */
+    font-size: 54px;
+    line-height: 1.5;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.hero_item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.hero_link {
+    font-family: 'Bellota Text';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 36px;
+    line-height: 45px; */
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.under {
+    text-transform: uppercase;
+    -webkit-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -ms-transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.under:hover {
+    transform: translateY(-25%) scale(2);
+    background-color: rgba(255, 215, 0, 0.5);
+}
+
+
+/* ABOUT-US */
+
+.gap {
+    padding: 150px 0;
+}
+
+.title {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 60px;
+    line-height: 117px; */
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.text {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* PEOPLE */
+
+.people {
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(255, 255, 255, 0.106685) 97.48%, rgba(249, 249, 249, 0.108768) 133.12%, rgba(0, 0, 0, 0) 133.13%);
+}
+
+.people_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.border {
+    height: 380px;
+    width: 320px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+}
+
+.border1 {
+    height: 460px;
+    width: 350px;
+}
+
+.border:hover {
+    border: 1px solid #ccac00;
+}
+
+.card {
+    height: 400px;
+    max-width: 350px;
+    background: #808080;
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    background: #000;
+    box-shadow: 0 70px 63px -60px #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card0 {
+    background: url(../img/people.jpg) center center no-repeat;
+    background-size: 450px;
+}
+
+.card0:hover {
+    background: url(../img/people.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.card0:hover h2 {
+    opacity: 1;
+}
+
+.card0:hover .fab {
+    opacity: 1;
+}
+
+.card1 {
+    background: url(../img/people.jpg) center center no-repeat;
+    background-size: 450px;
+    height: 480px;
+    width: 380px;
+}
+
+.card1:hover {
+    background: url(../img/people.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.card1:hover h2 {
+    opacity: 1;
+}
+
+.card1:hover .fab {
+    opacity: 1;
+}
+
+.card2 {
+    background: url(../img/people.jpg) center center no-repeat;
+    background-size: 450px;
+}
+
+.card2:hover {
+    background: url(../img/people.jpg) left center no-repeat;
+    background-size: 600px;
+}
+
+.card2:hover h2 {
+    opacity: 1;
+}
+
+.card2:hover .fab {
+    opacity: 1;
+}
+
+/* h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+} */
+
+.fab {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+/* .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+} */
+
+/* EVENTS */
+
+.events {
+    padding-bottom: 0;
+}
+
+.event_text {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.5;
+    color: #FFFFFF;
+}
+
+.block {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/event.jpg);
+    background-repeat: no-repeat;
+    padding-top: 10px;
+    padding-left: 20px;
+    background-size: 100%;
+    min-height: 400px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 20px 0 20px 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.title_footer {
+    text-align: left;
+    margin-bottom: 0;
+    color: #FFFFFF;
+}
+
+.footer_link {
+    font-family: 'Bellota Text';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #FFFFFF;
+}
+
+.footer_link {
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.footer_link:focus-visible {
+    outline-offset: 5px;
+}
+
+.footer_link:hover {
+    color: #ffd700;
+}
+
+.footer_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer_list_img {
+    margin-right: 10px;
+}
+
+.navigation {
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.navigation_item {
+    margin-bottom: 8px;
+}
