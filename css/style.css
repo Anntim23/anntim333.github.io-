@@ -16,13 +16,13 @@ html {
 }
 
 :root {
-    --orange-color: #FF9900;
-    --orange-color2: #E1670E;
-    --orange-color3: #FFB84D;
     --black-color: #000;
     --white-color: #fff;
-    --grey-color: #cacaca;
-    --gray-color2: #666666;
+    --grey-color: rgba(0, 0, 0, 0.6)
+    --golden-color: #ffd700;
+    --golden-color2: #ffed00;
+    --gap-section: 70px;
+    --gap-title: 20px;
 }
 
 a {
@@ -61,7 +61,7 @@ h3 {
 }
 
 .container {
-    max-width: 1920px;
+    max-width: 1170px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -77,11 +77,13 @@ h3 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    padding-top: 10px;
 }
 
 .header_text {
     max-width: 400px;
-    margin-right: 100px;
+    margin-right: 60px;
+    margin-left: 30px;
     font-family: 'Poiret One';
     font-style: normal;
     font-weight: 400;
@@ -133,10 +135,10 @@ h3 {
     font-weight: 400;
     /* font-size: 80px;
     line-height: 90px; */
-    font-size: 54px;
+    font-size: 60px;
     line-height: 1.5;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: var(--gap-title);
 }
 
 .hero_item:not(:last-child) {
@@ -150,7 +152,7 @@ h3 {
     /* font-size: 36px;
     line-height: 45px; */
     font-size: 24px;
-    line-height: 1.5;
+    line-height: 1;
     color: #fff;
 }
 
@@ -163,14 +165,14 @@ h3 {
 
 .under:hover {
     transform: translateY(-25%) scale(2);
-    background-color: rgba(255, 215, 0, 0.5);
+    /* background-color: rgba(255, 215, 0, 0.5); */
 }
 
 
 /* ABOUT-US */
 
 .gap {
-    padding: 150px 0;
+    padding: var(--gap-section);
 }
 
 .title {
@@ -182,15 +184,15 @@ h3 {
     font-size: 48px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: var(--gap-title);
 }
 
 
 .text {
     font-family: 'Poiret One';
     font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 1.5;
     text-align: center;
 }
@@ -354,8 +356,8 @@ h3 {
     padding-top: 10px;
     padding-left: 20px;
     background-size: 100%;
-    min-height: 400px;
-    margin-bottom: 30px;
+    min-height: 340px;
+    margin-bottom: var(--gap-title);
 }
 
 /* FOOTER */
@@ -367,7 +369,6 @@ h3 {
 
 .title_footer {
     text-align: left;
-    margin-bottom: 0;
     color: #FFFFFF;
 }
 
@@ -388,11 +389,14 @@ h3 {
 }
 
 .footer_link:focus-visible {
-    outline-offset: 5px;
+  outline-offset: 5px;
+  outline: 2px solid #ffed00;
 }
 
+
 .footer_link:hover {
-    color: #ffd700;
+  color: #ffd700;
+  border-color: #ffed00;
 }
 
 .footer_item {
