@@ -1,0 +1,33 @@
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/prayerful.jpg);
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-size: 100%;
+  padding-top: 10px;
+}
+
+.hero_title {
+  display: flex;
+    justify-content: center;
+}
+
+.hero_descr {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hero_content-left_title {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.text {
+  color: white;
+  text-align: inherit;
+}
+
+.hero_content-left {
+  margin-bottom: 50px;
+}

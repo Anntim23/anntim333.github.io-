@@ -1,0 +1,11 @@
+.header {
+  background-image: url(../img/baptism.jpg);
+  background-color: white;
+  background-position: top right;
+  background-size: contain;
+  margin-bottom: 0;
+}
+
+.col-lg-4 {
+  position: unset;
+}

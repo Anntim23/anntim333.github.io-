@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Marck+Script&family=Poiret+One&family=Sacramento&family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Bellota+Text:wght@300&family=Marck+Script&family=Poiret+One&family=Sacramento&family=Shantell+Sans:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before *::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+    --grey-color: rgba(0, 0, 0, 0.6);
+    --golden-color: #ffd700;
+    --golden-color2: #ffed00;
+    --gap-section: 70px;
+    --gap-title: 20px;
+}
+
+.header {
+  background-image: url(../img/chirch2.jpg);
+  background-position: top right;
+  background-size: contain;
+  margin-bottom: var(--gap-section);
+}
+
+.header_text {
+  color: var(--black-color);
+  max-width: 350px;
+    margin-right: 115px;
+}
+
+.hero_title {
+  color: var(--black-color);
+  text-align: center;
+}
+
+.about-us {
+  background-image: url(../img/Union.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.white-color {
+  color: var(--white-color);
+}
+
+.about-us_right {
+  margin-top: 500px;
+}
